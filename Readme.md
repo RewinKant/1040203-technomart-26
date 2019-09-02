@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Evgenii Kovalenko](https://up.htmlacademy.ru/htmlcss/26/user/1040203).
-* Наставник: `Неизвестно`.
+* Наставник: [Мария Чернова](https://htmlacademy.ru/profile/id49571).
 
 ---
 
