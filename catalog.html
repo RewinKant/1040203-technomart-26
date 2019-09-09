@@ -10,7 +10,7 @@
       <p>Поиск</p>
       <p>Закладки:0</p>
       <p>Корзина:0</p>
-      <button class="button">Оформить заказ</button>
+      <button type="button">Оформить заказ</button>
       <p>Интернет-магазин<br>
          строительных материалов<br>
          и инструментов для ремонта<br>
@@ -44,26 +44,67 @@
       </nav>
     </header>
     <main>
-      <!-- Неразмеченные блоки: Визуальная навигация на каталог, Популярные товары, Сервис -->
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="">Инструмент</a></li>
+        <li>Перфораторы</li>
+      </ul>
+      <h1>Перфораторы</h1>
+      <aside>
+        <h2>Фильтр</h2>
+        <!-- Форма фильтра: Цена, Производители, Питание -->
+      </aside>
       <section>
-        <h2>Компания "Техномарт"</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими транспортными компаниями:</p>
+        <h2>Карточки товаров</h2> <!-- Скрыть -->
         <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+          <li>
+            <h3>
+              <a href="">
+                <span>Перфоратор BOSCH</span>
+                <span>BFG 3000</span>
+              </a>
+            </h3>
+            <p>
+              <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000">
+            </p>
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+            <span class="last-price">22 500 Р.</span>
+            <span class="price">15 500 Р.</span>
+          </li>
+          <li>
+            <h3>
+              <a href="">
+                <span>Перфоратор BOSCH</span>
+                <span>BFG 6000</span>
+              </a>
+            </h3>
+            <p>
+              <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
+            </p>
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+            <span class="last-price">30 500 Р.</span>
+            <span class="price">25 500 Р.</span>
+          </li>
+          <li>
+            <h3>
+              <a href="">
+                <span>Перфоратор BOSCH</span>
+                <span>BFG 2000</span>
+              </a>
+            </h3>
+            <p>
+              <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 2000">
+            </p>
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+            <span class="last-price">none</span>
+            <span class="price">12 500 Р.</span>
+          </li>
+          <!-- Добавдение элементов списка -->
         </ul>
-        <a href="">Подробнее о компании</a>
-      </section>
-      <section>
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами,
-          заехав в наш офис:</p>
-        <!-- Карта месторасположения -->
-        <button class="button">Заблудились? Напишите нам!</button>
       </section>
     </main>
     <footer>
