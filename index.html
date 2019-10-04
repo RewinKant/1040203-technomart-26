@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <div>
         <a href="index.html">Техномарт</a>
-        <p>Поиск</p>
+        <form action="" method="post">
+          <label for="search" class="visually-hidden">Поле поиска</label>
+          <input id="search" type="text" name="search" placeholder="Поиск">
+        </form>
         <a href="">Закладки:0</a>
         <a href="">Корзина:0</a>
         <a href="">Оформить заказ</a>
       </div>
       <div>
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <a href="tel:+78125550555">tel:+7(812)555-05-55</a>
+        <a href="tel:+78125550555" aria-label="Контактный телефон">+7(812)555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <!-- Авторизация -->
         <ul>
@@ -26,7 +30,7 @@
         </ul>
         <!-- Конец -->
       </div>
-      <nav>
+      <nav aria-label="Главное меню">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="">Компания</a></li>
@@ -40,7 +44,7 @@
     </header>
     <main>
       <section>
-        <h2>Каталог и акции</h2>
+        <h2 class="visually-hidden">Каталог и акции</h2>
         <div class="label">
           <h3>Материалы</h3>
           <a href="">На любой вкус</a>
@@ -79,7 +83,7 @@
                 <a href="">Перфоратор BOSCH BFG 9000</a>
               </h3>
               <p>
-                <img src="img/perforator_9k.jpg" alt="Перфоратор BOSCH BFG 9000">
+                <img src="img/perforator_9k.png" alt="Перфоратор BOSCH BFG 9000">
               </p>
               <span class="last-price">32 500 Р.</span>
               <span class="price">25 500 Р.</span>
@@ -91,7 +95,7 @@
                 <a href="">Перфоратор BOSCH BFG 3000</a>
               </h3>
               <p>
-                <img src="img/perforator_3k2k.jpg" alt="Перфоратор BOSCH BFG 3000">
+                <img src="img/perforator_3k2k.png" alt="Перфоратор BOSCH BFG 3000">
               </p>
               <span class="last-price">22 500 Р.</span>
               <span class="price">15 500 Р.</span>
@@ -103,7 +107,7 @@
                 <a href="">Перфоратор BOSCH BFG 6000</a>
               </h3>
               <p>
-                <img src="img/perforator_6k.jpg" alt="Перфоратор BOSCH BFG 6000">
+                <img src="img/perforator_6k.png" alt="Перфоратор BOSCH BFG 6000">
               </p>
               <span class="last-price">30 500 Р.</span>
               <span class="price">25 500 Р.</span>
@@ -115,7 +119,7 @@
                 <a href="">Перфоратор BOSCH BFG 2000</a>
               </h3>
               <p>
-                <img src="img/perforator_3k2k.jpg" alt="Перфоратор BOSCH BFG 2000">
+                <img src="img/perforator_3k2k.png" alt="Перфоратор BOSCH BFG 2000">
               </p>
               <span class="last-price">none</span>
               <span class="price">12 500 Р.</span>
@@ -184,6 +188,18 @@
         <a> <!-- Всплывающая карта -->
           <img src="img/map.jpg" alt="Карта">
         </a>
+        <div>
+          <form method="post">
+            <button type="button" aria-label="Закрыть">X</button>
+            <label for="contact-name">Ваше имя:</label>
+            <input id="contact-name" type="text" name="contact-name" placeholder="Имя Фамилия" required>
+            <label for="contact-mail">Ваш e-mail:</label>
+            <input id="contact-mail" type="text" name="contact-mail" placeholder="email@example.com" required>
+            <label for="contact-text">Текст письма:</label>
+            <textarea id="contact-text" rows="5" name="contact-text" placeholder="В свободной форме"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
@@ -210,9 +226,9 @@
       <div>
         <p>© 2010–2019 Компания «Техномарт»
           Все права защищены</p>
-        <a href="">В контакте</a>
-        <a href="">Фейсбук</a>
-        <a href="">Инстаграм</a>
+        <a href="" aria-label="Техномарт во ВКонтакте"></a>
+        <a href="" aria-label="Техномарт в Фейсбуке"></a>
+        <a href="" aria-label="Техномарт в Инстаграме"></a>
         <span>Обратная связь:</span>
         <a href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         <span>Разработано —</span>

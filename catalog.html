@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <div>
         <a href="index.html">Техномарт</a>
-        <p>Поиск</p>
+        <form action="" method="post">
+          <label for="search" class="visually-hidden">Поле поиска</label>
+          <input id="search" type="text" name="search" placeholder="Поиск">
+        </form>
         <a href="">Закладки:0</a>
         <a href="">Корзина:0</a>
         <a href="">Оформить заказ</a>
       </div>
       <div>
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <a href="tel:+78125550555">tel:+7(812)555-05-55</a>
+        <a href="tel:+78125550555" aria-label="Контактный телефон">+7(812)555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <!-- Авторизация -->
         <div>
@@ -27,7 +31,7 @@
         </div>
         <!-- Конец -->
       </div>
-      <nav>
+      <nav aria-label="Главное меню">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="">Компания</a></li>
@@ -49,17 +53,41 @@
       <h1>Перфораторы</h1>
       <section>
         <h2>Фильтр</h2>
-        <h3>Цена</h3>
-        <h3>Производители</h3>
-        <h3>Питание</h3>
-        <!-- Форма фильтра: Цена, Производители, Питание -->
+        <form method="get">
+          <h3>Цена</h3>
+          <!-- Двойнй ползунок с привязкой к полям цен -->
+          <input id="min-price" type="number" name="min-price" value="0">
+          <input id="max-price" type="number" name="max-price" value="30000">
+          <h3>Производители</h3>
+          <ul>
+            <li>
+              <input id="bosch" type="checkbox" name="bosch" checked><label for="bosch">BOSCH</label>
+            </li>
+            <li>
+              <input id="interskol" type="checkbox" name="interskol"><label for="interskol">ИНТЕРСКОЛ</label>
+            </li>
+            <li>
+              <input id="makita" type="checkbox" name="makita" checked><label for="makita">MAKITA</label>
+            </li>
+            <li>
+              <input id="dewalt" type="checkbox" name="dewalt"><label for="dewalt">DEWALT</label>
+            </li>
+            <li>
+              <input id="hitachi" type="checkbox" name="hitachi"><label for="hitachi">HITACHI</label>
+            </li>
+          </ul>
+          <h3>Питание</h3>
+          <input id="acum" type="radio" name="acum"><label for="acum">АККУМУЛЯТОРНЫЕ</label>
+          <input id="no-acum" type="radio" name="acum"><label for="no-acum">СЕТЕВЫЕ</label>
+          <!-- Форма фильтра: Цена, Производители, Питание -->
+        </form>
         <div>
           <h3>Сортировка</h3>
-          <a href="">По цене</a>
-          <a href="">По типу</a>
-          <a href="">По функционалу</a>
-          <a href="">&utrif;</a>
-          <a href="">&dtrif;</a>
+          <a href="" aria-label="Сортиовка по цене">По цене</a>
+          <a href="" aria-label="Сортиовка по типу">По типу</a>
+          <a href="" aria-label="Сортиовка по функционалу">По функционалу</a>
+          <a href="" aria-label="Сортиовка по возрастанию">&utrif;</a>
+          <a href="" aria-label="Сортиовка по убыванию">&dtrif;</a>
         </div>
       </section>
       <section>
@@ -109,6 +137,15 @@
             <li><a href="">2</a></li>
             <li><a href="">3</a></li>
             <li><a href="">Следующая</a></li>
+          </ul>
+          <!-- popap "Ваш товар добавлен в корзину"-->
+          <div>
+            <p>Товар добавлен в корзину</p>
+            <a href="">Оформить заказ</a>
+            <button type="button">Продолжить покупки</button>
+            <button type="button" aria-label="Закрыть">Х</button>
+          </div>
+        </div>
       </section>
       <section>
         <h2>Пара слов о перфораторах</h2>
@@ -142,9 +179,9 @@
       <div>
         <p>© 2010–2019 Компания «Техномарт»
           Все права защищены</p>
-        <a href="">В контакте</a>
-        <a href="">Фейсбук</a>
-        <a href="">Инстаграм</a>
+        <a href="" aria-label="Техномарт во ВКонтакте"></a>
+        <a href="" aria-label="Техномарт в Фейсбуке"></a>
+        <a href="" aria-label="Техномарт в Инстаграме"></a>
         <span>Обратная связь:</span>
         <a href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         <span>Разработано —</span>
