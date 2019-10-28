@@ -99,10 +99,7 @@ body {
   background-color: #ba2732;
 }
 /* Header */
-header {
-  background-color: #f1f5f7;
-}
-header li, footer li {
+.login li, .pre-end li {
   list-style-type: none;
   display: inline;
 }
@@ -117,18 +114,18 @@ header li, footer li {
   color: #ffffff;
   text-decoration: none;
 }
-.top-header a.logo {
+.top-header .logo {
   text-transform: uppercase;
   font-size: 26px;
 
   background-color: #ee3643;
   box-shadow: 0 5px #b52933;
 }
-.top-header a.logo:hover {
+.top-header .logo:hover {
   background-color: #c92c37;
   color: #ffffff;
 }
-.top-header a.logo:active {
+.top-header .logo:active {
   background-color: #ba2632;
   color: #ffffff;
 }
@@ -174,61 +171,92 @@ header li, footer li {
   color: #b9bec4;
 }
 
-.login p:first-child {
+.login {
+  background-color: #f1f5f7;
+}
+.info {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
   font-style: italic;
 }
-.login p {
+.address {
   font-size: 14px;
   color: #32425c;
 }
-.login a {
+.authorization-menu, .user {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   text-decoration: none;
-
-  background-color: #ffffff;
 }
-.login a:hover {
+.authorization-menu:hover {
   color: #ee3643
 }
-.login a:active {
+.authorization-menu:active {
   color: rgba(0, 0, 0, 0.3);
 }
-.login > a {
+.user:hover {
+}
+.user:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.user-menu {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+}
+.user-menu:hover {
+  color: #ee3643;
+}
+.user-menu:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.tel {
+  font-size: 21px;
+  line-height: 21px;
   color: #e9292a;
   text-decoration: none;
   letter-spacing: 0.02em;
 }
 
-nav {
+.top-nav {
   background-color: #32425c;
   box-shadow: 0 5px #293449;
 }
-nav a {
+.top-nav li {
+  list-style-type: none;
+  display: inline;
+}
+.top-nav a {
   font-size: 17px;
   line-height: 17px;
   text-decoration: none;
   color: #ffffff;
   vertical-align: middle;
 }
-nav a:hover {
+.top-nav a:hover {
   background-color: #293449;
 }
-nav a:active {
+.top-nav a:active {
   background-color: #293449;
   color: rgba(255, 255, 255 , 0.5);
 }
 
 /* Main */
-h2 {
+.more h2 {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
+}
+.page h1{
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
 }
 .label h3 {
   font-size: 24px;
@@ -274,6 +302,7 @@ h2 {
 .promo-label p {
   font-size: 18px;
   line-height: 24px;
+  color: #ffffff;
 }
 
 .more {
@@ -321,13 +350,18 @@ h2 {
 }
 .mark:hover {
   border: 3px solid #32425c;
+  background-color: #ffffff;
 }
 .mark:active {
   color: #c1c6ce;
   border: 3px solid #c1c6ce;
+  background-color: #ffffff;
 }
 
-.service h2, .about h2, .contacts h2 {
+.service h2, .about h2, .contacts h2, .page-info h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
   color:#000000;
 }
 .service p, .about p, .contacts p {
@@ -374,13 +408,56 @@ h2 {
 .feed-back input::-webkit-input-placeholder {
   color: #a9a9a9;
 }
+.filter {
+  font-family: "PT Sans", "Arial",sans-serif;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+.filters {
+  font-family: "PT Sans", "Arial",sans-serif;
+  text-transform: uppercase;
+}
+.filters h3 {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+.filters label {
+  font-size: 15px;
+  line-height: 20px;
+}
+.catalog-button {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.page-number a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.page-info{
+  background-color: #f2f6f8;
+}
+.page-info p {
+  font-family: "PT Sans", "Arial",sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+.popap-bin p {
+  font-size: 30px;
+  line-height: 30px;
+}
+.next {
+  background-color: #ffffff;
+  color: #000000;
+}
 
 footer {
   background-color: #32425c;
   font-size: 18px;
   line-height: 24px;
 }
-a.logo {
+.logo {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -389,11 +466,11 @@ a.logo {
   background-color: #ee3643;
   box-shadow: 0 5px #b52933;
 }
-a.logo:hover {
+.logo:hover {
   background-color: #c92c37;
   color: #ffffff;
 }
-a.logo:active {
+.logo:active {
   background-color: #ba2632;
   color: #ffffff;
 }
