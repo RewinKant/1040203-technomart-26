@@ -98,23 +98,45 @@ body {
 .button:active {
   background-color: #ba2732;
 }
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
 /* Header */
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+}
 .login li, .pre-end li {
   list-style-type: none;
   display: inline;
 }
-
+.top-header-wrapper {
+  width: 100%;
+  background-color: #293449;
+}
 .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #293449;
 }
 .top-header a {
+  /* display: block; */
+  width: 150px;
+  /* height: 42px; */
+
   font-size: 17px;
   line-height: 18px;
+  text-align: center;
 
   color: #ffffff;
   text-decoration: none;
 }
 .top-header .logo {
+  width: 220px;
   text-transform: uppercase;
   font-size: 26px;
 
@@ -130,12 +152,14 @@ body {
   color: #ffffff;
 }
 .top-header form {
-  display: inline;
+
 }
 .top-header input:hover {
   background-color: #212a3b;
 }
 .top-header input  {
+  width: 270px;
+  min-height: 42px;
   font-size: 17px;
   line-height: 18px;
 
@@ -152,6 +176,10 @@ body {
 
 .top-header input:focus {
   background-color: #ffffff;
+}
+
+.info-buy {
+  display: flex;
 }
 .top-header a:last-child {
   background-color: #63a63e;
@@ -170,11 +198,26 @@ body {
   background-color: #518533;
   color: #b9bec4;
 }
+.bottom-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 278px;
 
-.login {
   background-color: #f1f5f7;
 }
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 158px;
+
+}
 .info {
+  display: block;
+  width: 200px;
+  margin-left: 50px;
+
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
@@ -184,11 +227,28 @@ body {
   font-size: 14px;
   color: #32425c;
 }
+.authorization {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+}
+.authorization-menu:first-child {
+  width: 121px;
+  height: 45px;
+}
+.authorization-menu:last-child {
+  width: 150px;
+  height: 45px;
+  margin-left: 10px;
+}
 .authorization-menu, .user {
+  display: block;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   text-decoration: none;
+
+  background-color: #ffffff;
 }
 .authorization-menu:hover {
   color: #ee3643
@@ -224,16 +284,28 @@ body {
   background-color: #32425c;
   box-shadow: 0 5px #293449;
 }
+.top-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .top-nav li {
-  list-style-type: none;
-  display: inline;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 55px;
+
 }
 .top-nav a {
+  flex-grow: 1;
+  /* невнятное решение с падингом */
+  padding: 19px 0;
   font-size: 17px;
   line-height: 17px;
   text-decoration: none;
   color: #ffffff;
-  vertical-align: middle;
+  text-align: center;
 }
 .top-nav a:hover {
   background-color: #293449;
@@ -258,6 +330,21 @@ body {
 
   background-color: #f2f6f8;
 }
+.promo-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 409px;
+  padding-top: 59px;
+  padding-bottom: 53px;
+}
+.promo-nav > div {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+
+  flex-wrap: wrap;
+
+}
 .label h3 {
   font-size: 24px;
   line-height: 30px;
@@ -268,16 +355,23 @@ body {
   background-color: #ffbf47;
 }
 .tools {
+  margin-left: 20px;
   background-color: #3bbce3;
 }
 .technic {
   background-color: #dc91d8;
 }
 .discount {
+  margin-top: 20px;
   background-color: #8ed78f;
 }
 .delivery {
+  margin-top: 20px;
   background-color: #ffc047;
+}
+.label {
+  width: 300px;
+  height: 123px;
 }
 .label a {
   background-color: rgba(0, 0, 0, 0.1);
@@ -290,6 +384,9 @@ body {
 }
 
 .promo-label {
+  width: 620px;
+  height: 266px;
+  margin-top: 20px;
   background-color: #b2b2b2;
 }
 .promo-label h3 {
@@ -306,12 +403,28 @@ body {
 }
 
 .more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 89px;
   background-color: #f9f5f0;
 }
+.list {
+  display: flex;
+  justify-content: space-between;
 
+  list-style: none;
+  margin: 20px 0 21px 0;
+  padding: 0;
+}
 .list-item {
+  width: 218px;
+  height: 316px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
+
+  border: 1px solid #eaeaea;
 }
 .list-item h3 > a {
   font-size: 18px;
@@ -358,6 +471,25 @@ body {
   background-color: #ffffff;
 }
 
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.company-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 218px;
+  height: 143px;
+  border: 1px solid #eaeaea;
+}
+
+.service {
+  width: 100%;
+  background-color: #f4f8fa;
+}
 .service h2, .about h2, .contacts h2, .page-info h2 {
   font-size: 30px;
   line-height: 30px;
@@ -372,6 +504,13 @@ body {
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+}
+.service-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.service-detals input {
+  display: none;
 }
 .controls label {
   font-size: 21px;
