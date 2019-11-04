@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- 16. Личный проект: завершаем строить сетку на флексах -->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -226,26 +225,31 @@
         </section>
         <section class="contacts">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами,
-            заехав в наш офис:</p>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <a href=""><img src="img/mini-map.jpg" alt="Мини-карта"></a>
           <a class="button" href="">Заблудились? Напишите нам!</a>
           <a class="visually-hidden"> <!-- Всплывающая карта -->
             <img src="img/map.jpg" alt="Карта">
           </a>
-          <div class="feed-back visually-hidden">
-            <form method="post">
-              <button type="button" aria-label="Закрыть">X</button>
-              <label for="contact-name">Ваше имя:</label>
-              <input id="contact-name" type="text" name="contact-name" placeholder="Имя Фамилия" required>
-              <label for="contact-mail">Ваш e-mail:</label>
-              <input id="contact-mail" type="text" name="contact-mail" placeholder="email@example.com" required>
+        </section>
+        <div class="popap-feedback visually-hidden">
+          <form method="post">
+            <div class="popap-feedback-top">
+              <a class="popap-feedback-close" href=""></a>
+              <div class="popap-feedback-contact">
+                <label for="contact-name">Ваше имя:</label>
+                <label for="contact-mail">Ваш e-mail:</label>
+                <input id="contact-name" type="text" name="contact-name" placeholder="Имя Фамилия" required>
+                <input id="contact-mail" type="text" name="contact-mail" placeholder="email@example.com" required>
+              </div>
               <label for="contact-text">Текст письма:</label>
               <textarea id="contact-text" rows="5" name="contact-text" placeholder="В свободной форме"></textarea>
+            </div>
+            <div class="popap-feedback-bottom">
               <button class="button" type="submit">Отправить</button>
-            </form>
-          </div>
-        </section>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
     <footer>
@@ -282,10 +286,7 @@
           <a class="social-inst"href="" aria-label="Техномарт в Инстаграме"><span></span></a>
           <div class="developer">
             <span>Обратная связь: <a href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
-
-
             <span>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span>
-
           </div>
         </div>
       </div>
