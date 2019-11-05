@@ -10,7 +10,7 @@
     <header class="main-header">
       <div class="top-header-wrapper">
         <div class="top-header container">
-          <a class="logo">Техномарт</a>
+          <a class="logo" href="index.html">Техномарт</a>
           <form class="post" method="post">
             <label class="search" for="search">
               <input class="search" id="search" type="text" name="search" placeholder="Поиск">
@@ -23,8 +23,8 @@
             </label>
           </form>
           <div class="info-buy">
-            <a class="info-mark" href="">Закладки:<span>0</span></a>
-            <a class="info-bin" href="">Корзина:<span>0</span></a>
+            <a class="info-mark" href="">Закладки:&nbsp;<span>0</span></a>
+            <a class="info-bin info-buy-active" href="">Корзина:&nbsp;<span>10</span></a>
             <a href="">Оформить заказ</a>
           </div>
         </div>
@@ -88,7 +88,7 @@
               </div>
             </fieldset>
             <div class="developer-list">
-              <h3>Производители</h3>
+              <h3>Производители:</h3>
               <ul>
                 <li><input class="developer-item" id="bosch" type="checkbox" name="bosch" checked><label for="bosch">bosch</label></li>
                 <li><input class="developer-item" id="interskol" type="checkbox" name="interskol"><label for="interskol">интерскол</label></li>
@@ -110,15 +110,21 @@
         <section class="tools-list">
           <h2 class="visually-hidden">Карточки товаров</h2>
           <div class="range-filter">
-            <h3>Сортировка</h3>
-            <div class="range-list">
+              <h3>Сортировка:</h3>
               <a class="range-item-active" href="">По цене</a>
               <a href="">По типу</a>
               <a href="">По функционалу</a>
               <div class="range-item">
-                <a href="" aria-label="Сортиовка по возрастанию">&utrif;</a>
-                <a href="" aria-label="Сортиовка по убыванию">&dtrif;</a>
-              </div>
+                <a class="range-item-active" href="" aria-label="Сортиовка по возрастанию">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </a>
+                <a href="" aria-label="Сортиовка по убыванию">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                    <polyline fill="#cacaca" points="5.5,10 0,0 11,0 "/>
+                  </svg>
+                </a>
             </div>
           </div>
           <ul class="catalog-list">
@@ -142,7 +148,7 @@
                 <a class="button mark" href="">В закладки</a>
               </div>
             </li>
-            <li class="list-item">
+            <li class="list-item list-item-new">
               <h3><a href="">Перфоратор BOSCH BFG 2000</a></h3>
               <img src="img/perforator_3k2k.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
               <span class="last-price"></span>
@@ -162,7 +168,7 @@
                 <a class="button mark" href="">В закладки</a>
               </div>
             </li>
-            <li class="list-item">
+            <li class="list-item list-item-new">
               <h3><a href="">Перфоратор BOSCH BFG 6000</a></h3>
               <img src="img/perforator_6k.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
               <span class="last-price">30500 Р.</span>
@@ -182,7 +188,7 @@
                 <a class="button mark" href="">В закладки</a>
               </div>
             </li>
-            <li class="list-item">
+            <li class="list-item list-item-new">
               <h3><a href="">Перфоратор BOSCH BFG 3000</a></h3>
               <img src="img/perforator_3k2k.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
               <span class="last-price">22500 Р.</span>
@@ -249,7 +255,7 @@
       <div class="pre-end-wrapper">
         <div class="pre-end container">
           <div class="bottom-contacts">
-            <a class="logo">Техномарт</a>
+            <a class="logo" href="index.html">Техномарт</a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               +7 (812) 555-05-55</p>
           </div>
