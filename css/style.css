@@ -177,9 +177,10 @@ body {
   line-height: 18px;
 
   background-color: #293449;
-  color: #000000;
+  color: #ffffff;
   border: none;
 }
+
 .post label {
   position: relative;
   display: block;
@@ -215,6 +216,7 @@ body {
 }
 .top-header input:focus {
   background-color: #ffffff;
+  color: #000000;
 }
 .info-buy {
   position: relative;
@@ -444,7 +446,7 @@ body {
   background-repeat: no-repeat;
   opacity: 0.5;
 }
-.user::after {
+.user-log-off::after {
   content: "";
 
   position: absolute;
@@ -1334,26 +1336,13 @@ button.popap-close {
   height: 21px;
 
   border: none;
-  /* background-color: rgba(255, 255, 255 0.1); */
+  background-color: transparent;
   background-image: url(../img/form-2.svg);
   background-repeat: no-repeat;
 
   cursor: pointer;
 }
-/* .popap-close::before {
-  position: absolute;
-  top: 8px;
-  right: 9px;
-  width: 21px;
-  height: 21px;
 
-  border: none;
-  background-color: rgba(255, 255, 255 0.1);
-  background-image: url(../img/form-2.svg);
-  background-repeat: no-repeat;
-
-  cursor: pointer;
-} */
 .popap-feedback input::-webkit-input-placeholder {
   color: #a9a9a9;
 }
