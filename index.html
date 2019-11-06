@@ -118,8 +118,8 @@
               <span class="last-price">32 500 Р.</span>
               <span class="price">25 500 Р.</span>
               <div class="buy-menu">
-                <a class="buy" href="">Купить</a>
-                <a class="mark" href="">В закладки</a>
+                <a class="button buy" href="">Купить</a>
+                <a class="button mark" href="">В закладки</a>
               </div>
             </li>
             <li class="list-item">
@@ -226,24 +226,22 @@
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href=""><img src="img/mini-map.jpg" alt="Мини-карта" width="300" height="158"></a>
-          <a class="button" href="">Заблудились? Напишите нам!</a>
+          <a class="show-map" href=""><img src="img/mini-map.jpg" alt="Мини-карта" width="300" height="158"></a>
+          <a class="button show-feedback" href="">Заблудились? Напишите нам!</a>
           <div class="full-map"> <!-- Всплывающая карта -->
-            <button class="popap-close"><span class="visually-hidden">Закрыть</span></button>
-            <a href="https://yandex.ru/maps/-/CGHdfF8M">
-              <img src="img/map.jpg" alt="Карта" width="940" height="446">
-            </a>
+            <button class="popap-close popap-close-map"><span class="visually-hidden">Закрыть</span></button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.32089461581498!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1573018855940!5m2!1sru!2sru" width="940" height="446" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
         </section>
-        <div class="popap-feedback visually-hidden">
+        <div class="popap-feedback">
           <form method="post">
             <div class="popap-feedback-top">
-              <button class="popap-close"><span class="visually-hidden">Закрыть</span></button>
+              <button class="popap-close popap-close-feedback"><span class="visually-hidden">Закрыть</span></button>
               <div class="popap-feedback-contact">
                 <label for="contact-name">Ваше имя:</label>
                 <label for="contact-mail">Ваш e-mail:</label>
-                <input id="contact-name" type="text" name="contact-name" placeholder="Имя Фамилия" required>
-                <input id="contact-mail" type="text" name="contact-mail" placeholder="email@example.com" required>
+                <input id="contact-name" type="text" name="contact-name" placeholder="Имя Фамилия">
+                <input id="contact-mail" type="text" name="contact-mail" placeholder="email@example.com">
               </div>
               <label for="contact-text">Текст письма:</label>
               <textarea id="contact-text" rows="5" name="contact-text" placeholder="В свободной форме"></textarea>
@@ -284,9 +282,9 @@
         <div class="end container">
           <p class="rules">© 2010–2019 Компания «Техномарт»
             Все права защищены</p>
-          <a class="social-vk" href="" aria-label="Техномарт во ВКонтакте"><span></span></a>
-          <a class="social-fb" href="" aria-label="Техномарт в Фейсбуке"><span></span></a>
-          <a class="social-inst" href="" aria-label="Техномарт в Инстаграме"><span></span></a>
+          <a class="social-vk" href="" aria-label="Техномарт во ВКонтакте"></a>
+          <a class="social-fb" href="" aria-label="Техномарт в Фейсбуке"></a>
+          <a class="social-inst" href="" aria-label="Техномарт в Инстаграме"></a>
           <div class="developer">
             <div><p>Обратная связь: <a href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p></div>
             <div><p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p></div>
@@ -294,5 +292,6 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
