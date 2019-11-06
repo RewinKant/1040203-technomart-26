@@ -1420,6 +1420,10 @@ button.popap-close {
 
   box-shadow: 0 0 20px -5px #000000;
 }
+.popap-show-map {
+  background-color: #ffffff;
+  background-image: url(../img/map.jpg);
+}
 
 .popap-bin {
   box-sizing: border-box;
